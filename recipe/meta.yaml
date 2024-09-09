@@ -1,5 +1,5 @@
 {% set name = "pybind11-numpy-example" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pybind11_numpy_example-{{ version }}.tar.gz
-  sha256: 8a18a4dcbdebee2111b3ab45f38fb4ed80757a76f6d796487738518c001a91bb
+  sha256: 7cd0ec6b8dbbcba29f5df14cc1c8c80d7cd8268b893298059559bd19508acf0d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
