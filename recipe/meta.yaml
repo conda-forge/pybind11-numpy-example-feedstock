@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pybind11_numpy_example-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pybind11_numpy_example-{{ version }}.tar.gz
   sha256: 7cd0ec6b8dbbcba29f5df14cc1c8c80d7cd8268b893298059559bd19508acf0d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
